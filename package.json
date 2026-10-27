@@ -1,0 +1,19 @@
+{
+  "name": "noire-skincare",
+  "version": "1.0.0",
+  "description": "NOIRÉ — Editorial Luxury Skincare Landing Page",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "luxury",
+    "skincare",
+    "editorial",
+    "design-system",
+    "html5",
+    "css3"
+  ],
+  "author": "NOIRÉ Creative Atelier",
+  "license": "MIT"
+}

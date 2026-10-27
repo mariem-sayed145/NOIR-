@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOIRÉ — Skincare, Considered</title>
+  <meta name="description" content="Thoughtfully formulated skincare for an intentional daily ritual. Featuring biocompatible botanicals and essential lipids designed for quiet confidence.">
+  
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-family='serif' fill='%2371333D'>N</text></svg>">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Minimal Announcement Strip -->
+  <aside class="announcement-bar" aria-label="Brand notice">
+    <div class="container announcement-inner">
+      <span class="announcement-tag">EDITION 04</span>
+      <p class="announcement-text">Complimentary signature discovery vial with every order &bull; Carbon-neutral worldwide delivery</p>
+      <span class="announcement-locale">PARIS &bull; KYOTO &bull; NEW YORK</span>
+    </div>
+  </aside>
+
+  <!-- Site Header -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      <!-- Left: Brand Wordmark -->
+      <a href="#" class="brand-logo" aria-label="NOIRÉ Homepage">
+        <span class="logo-text">NOIRÉ</span>
+        <span class="logo-sub">RITUEL DE SOIN</span>
+      </a>
+
+      <!-- Center: Desktop Navigation -->
+      <nav class="nav-desktop" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#products" class="nav-link">The Ritual</a>
+          </li>
+          <li class="nav-item">
+            <a href="#ingredients" class="nav-link">Ingredients</a>
+          </li>
+          <li class="nav-item">
+            <a href="#philosophy" class="nav-link">Our Philosophy</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Right: Desktop Actions -->
+      <div class="header-actions">
+        <a href="#products" class="btn-subtle" id="nav-cta">
+          <span>Discover the Ritual</span>
+        </a>
+        <button type="button" class="bag-toggle" id="bag-toggle-btn" aria-label="View ritual bag (0 items)" aria-haspopup="dialog" aria-expanded="false">
+          <span class="bag-label">Bag</span>
+          <span class="bag-count" id="bag-count" aria-hidden="true">(0)</span>
+        </button>
+        <!-- Mobile Menu Trigger -->
+        <button type="button" class="mobile-toggle" id="mobile-toggle-btn" aria-label="Toggle navigation menu" aria-controls="mobile-menu" aria-expanded="false">
+          <span class="toggle-bar"></span>
+          <span class="toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobile-menu" aria-hidden="true">
+      <div class="mobile-drawer-inner">
+        <div class="mobile-drawer-header">
+          <span class="mobile-brand">NOIRÉ</span>
+          <button type="button" class="mobile-close-btn" id="mobile-close-btn" aria-label="Close menu">
+            <span>&times;</span>
+          </button>
+        </div>
+        <nav class="mobile-nav" aria-label="Mobile navigation">
+          <ul class="mobile-nav-list">
+            <li>
+              <a href="#products" class="mobile-nav-link" data-mobile-link>
+                <span class="mobile-num">01</span>
+                <span class="mobile-text">The Ritual</span>
+              </a>
+            </li>
+            <li>
+              <a href="#ingredients" class="mobile-nav-link" data-mobile-link>
+                <span class="mobile-num">02</span>
+                <span class="mobile-text">Ingredients</span>
+              </a>
+            </li>
+            <li>
+              <a href="#philosophy" class="mobile-nav-link" data-mobile-link>
+                <span class="mobile-num">03</span>
+                <span class="mobile-text">Our Philosophy</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mobile-drawer-footer">
+          <a href="#products" class="btn-primary mobile-drawer-btn" data-mobile-link>
+            Explore the Collection
+          </a>
+          <p class="mobile-note">Quiet luxury skincare formulated for intentional daily living.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Landmark -->
+  <main id="main-content">
+    
+    <!-- Hero Section -->
+    <section class="hero-section" aria-labelledby="hero-heading">
+      <div class="hero-grid">
+        
+        <!-- Left Column: Editorial Copy -->
+        <div class="hero-copy-col">
+          <div class="hero-label-wrap">
+            <span class="editorial-line" aria-hidden="true"></span>
+            <span class="editorial-label">SKINCARE, CONSIDERED</span>
+          </div>
+
+          <h1 id="hero-heading" class="hero-headline">
+            Less, but<br>
+            <span class="headline-em">better.</span>
+          </h1>
+
+          <p class="hero-support">
+            Thoughtfully formulated skincare for a ritual that feels as good as it works.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#products" class="btn-primary">
+              <span>Explore the Collection</span>
+              <svg class="btn-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#philosophy" class="text-link">
+              <span>Our Philosophy</span>
+            </a>
+          </div>
+
+          <!-- Hero Footer Note / Specifications -->
+          <div class="hero-spec-strip">
+            <div class="spec-item">
+              <span class="spec-label">INTENTION</span>
+              <span class="spec-value">Restraint over excess</span>
+            </div>
+            <div class="spec-divider" aria-hidden="true"></div>
+            <div class="spec-item">
+              <span class="spec-label">STANDARD</span>
+              <span class="spec-value">Biocompatible actives</span>
+            </div>
+            <div class="spec-divider" aria-hidden="true"></div>
+            <div class="spec-item">
+              <span class="spec-label">ORIGIN</span>
+              <span class="spec-value">Grasse &bull; Kyoto</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Editorial Product Imagery -->
+        <div class="hero-visual-col">
+          <div class="hero-image-frame">
+            <div class="editorial-annotation">
+              <span class="annotation-badge">01 / DAILY RITUAL</span>
+              <span class="annotation-sub">FORMULATION NO. 04</span>
+            </div>
+            
+            <div class="hero-image-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=1200&q=80" 
+                alt="Minimalist NOIRÉ glass dropper bottle resting on smooth warm limestone under natural morning light" 
+                class="hero-image"
+                width="1200"
+                height="1500"
+                loading="eager"
+                fetchpriority="high"
+              >
+            </div>
+
+            <div class="hero-floating-tag" aria-hidden="true">
+              <span class="tag-num">N° 02</span>
+              <div class="tag-content">
+                <span class="tag-title">Botanical Infusion</span>
+                <span class="tag-desc">Cold-extracted squalane &amp; fermented botanicals</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Editorial Quote Divider -->
+    <section class="statement-banner" aria-label="Brand ethos">
+      <div class="container">
+        <p class="statement-text">
+          &ldquo;We design formulas that honor the skin&rsquo;s natural architecture &mdash; stripping away sensory noise to celebrate genuine restorative nourishment.&rdquo;
+        </p>
+        <span class="statement-author">&mdash; The NOIRÉ Formulation Manifesto</span>
+      </div>
+    </section>
+
+    <!-- Product Section -->
+    <section class="products-section" id="products" aria-labelledby="products-heading">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header-editorial">
+          <div class="section-meta">
+            <span class="editorial-label">THE FOUNDATION COLLECTION</span>
+            <span class="section-counter">03 ESSENTIALS</span>
+          </div>
+          <h2 id="products-heading" class="section-title">Your everyday essentials.</h2>
+          <p class="section-desc">
+            A cohesive three-step ritual developed to cleanse with tenderness, illuminate with nutrient clarity, and seal the protective moisture barrier.
+          </p>
+        </div>
+
+        <!-- Editorial Products Grid -->
+        <div class="products-grid">
+          
+          <!-- Product 01 -->
+          <article class="product-card" data-product-id="cleanser">
+            <div class="product-media">
+              <div class="product-index" aria-hidden="true">01 / 03</div>
+              <div class="product-image-box">
+                <img 
+                  src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80" 
+                  alt="NOIRÉ The Gentle Cleanser in a neutral minimalist pump dispenser on warm stone" 
+                  class="product-img"
+                  width="800"
+                  height="1000"
+                  loading="lazy"
+                >
+              </div>
+              <div class="product-texture-badge">Gel-to-Milk Texture</div>
+            </div>
+
+            <div class="product-info">
+              <div class="product-title-row">
+                <h3 class="product-name">01 — The Gentle Cleanser</h3>
+                <span class="product-price">$42</span>
+              </div>
+              <p class="product-description">
+                A gentle gel-to-milk emulsion that removes impurities while honoring your skin's natural moisture barrier.
+              </p>
+              <div class="product-card-footer">
+                <button type="button" class="btn-discover" data-discover-trigger="cleanser">
+                  <span>Discover product</span>
+                  <svg class="link-arrow" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+                <button type="button" class="quick-add-btn" data-add-cart="cleanser" aria-label="Add The Gentle Cleanser to bag">
+                  + Add
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 02 -->
+          <article class="product-card" data-product-id="serum">
+            <div class="product-media">
+              <div class="product-index" aria-hidden="true">02 / 03</div>
+              <div class="product-image-box">
+                <img 
+                  src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80" 
+                  alt="NOIRÉ The Daily Serum in an amber glass bottle with precision pipette" 
+                  class="product-img"
+                  width="800"
+                  height="1000"
+                  loading="lazy"
+                >
+              </div>
+              <div class="product-texture-badge">Featherlight Elixir</div>
+            </div>
+
+            <div class="product-info">
+              <div class="product-title-row">
+                <h3 class="product-name">02 — The Daily Serum</h3>
+                <span class="product-price">$68</span>
+              </div>
+              <p class="product-description">
+                A featherlight botanical elixir formulated to infuse sustained hydration and restore radiant skin harmony.
+              </p>
+              <div class="product-card-footer">
+                <button type="button" class="btn-discover" data-discover-trigger="serum">
+                  <span>Discover product</span>
+                  <svg class="link-arrow" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+                <button type="button" class="quick-add-btn" data-add-cart="serum" aria-label="Add The Daily Serum to bag">
+                  + Add
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 03 -->
+          <article class="product-card" data-product-id="cream">
+            <div class="product-media">
+              <div class="product-index" aria-hidden="true">03 / 03</div>
+              <div class="product-image-box">
+                <img 
+                  src="https://images.unsplash.com/photo-1570554886111-e80fcca6a029?auto=format&fit=crop&w=800&q=80" 
+                  alt="NOIRÉ The Barrier Cream in an elegant frosted ceramic jar on raw woven linen" 
+                  class="product-img"
+                  width="800"
+                  height="1000"
+                  loading="lazy"
+                >
+              </div>
+              <div class="product-texture-badge">Lipid Melting Balm</div>
+            </div>
+
+            <div class="product-info">
+              <div class="product-title-row">
+                <h3 class="product-name">03 — The Barrier Cream</h3>
+                <span class="product-price">$58</span>
+              </div>
+              <p class="product-description">
+                A rich lipid-replenishing moisture balm designed to shield against environmental stress and lock in hydration.
+              </p>
+              <div class="product-card-footer">
+                <button type="button" class="btn-discover" data-discover-trigger="cream">
+                  <span>Discover product</span>
+                  <svg class="link-arrow" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+                <button type="button" class="quick-add-btn" data-add-cart="cream" aria-label="Add The Barrier Cream to bag">
+                  + Add
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Ritual Complete Box -->
+        <div class="ritual-bundle-card">
+          <div class="bundle-content">
+            <div class="bundle-badge">THE COMPLETE TRIO</div>
+            <h3 class="bundle-title">The Curated Daily Ritual</h3>
+            <p class="bundle-desc">Experience the complete trio together for a harmonious morning and evening skin practice. Includes custom porcelain spoon and travel pouch.</p>
+            <div class="bundle-price-row">
+              <span class="bundle-price">$148</span>
+              <span class="bundle-savings">Valued at $168 &bull; Complimentary ritual gift included</span>
+            </div>
+          </div>
+          <div class="bundle-action">
+            <button type="button" class="btn-primary" data-add-cart="bundle">
+              <span>Experience the Trio</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="philosophy-section" id="philosophy" aria-labelledby="philosophy-heading">
+      <div class="container">
+        
+        <div class="philosophy-layout">
+          
+          <!-- Text Side -->
+          <div class="philosophy-text-col">
+            <div class="editorial-label-wrap">
+              <span class="editorial-line" aria-hidden="true"></span>
+              <span class="editorial-label">OUR MANIFESTO</span>
+            </div>
+
+            <h2 id="philosophy-heading" class="philosophy-headline">
+              Care, without the excess.
+            </h2>
+
+            <p class="philosophy-lead">
+              Good skincare should feel intentional. We focus on thoughtful routines, considered ingredients, and products designed to fit naturally into everyday life.
+            </p>
+
+            <div class="principles-grid">
+              <!-- Principle 01 -->
+              <div class="principle-item">
+                <div class="principle-num">01</div>
+                <div class="principle-body">
+                  <h3 class="principle-title">Formula Restraint</h3>
+                  <p class="principle-text">
+                    We eliminate unnecessary filler ingredients, artificial colorants, and heavy masking scents. Every active in our apothecary serves an intentional, harmonious purpose for daily balance.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Principle 02 -->
+              <div class="principle-item">
+                <div class="principle-num">02</div>
+                <div class="principle-body">
+                  <h3 class="principle-title">Tactile Pleasure</h3>
+                  <p class="principle-text">
+                    Skincare should feel like a moment of gentle pause. We create sensorial textures that melt into the skin with quiet ease &mdash; turning everyday routines into grounding self-care.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Additional Editorial Details -->
+            <div class="philosophy-stats-row">
+              <div class="philosophy-stat">
+                <span class="stat-digit">100%</span>
+                <span class="stat-caption">Recyclable flint glass and bio-resin components</span>
+              </div>
+              <div class="philosophy-stat">
+                <span class="stat-digit">0%</span>
+                <span class="stat-caption">Synthetic fragrance, sulfates, or paraben fillers</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image Side -->
+          <div class="philosophy-visual-col">
+            <div class="philosophy-image-frame">
+              <img 
+                src="https://images.unsplash.com/photo-1508746829417-e6f548d8d6ed?auto=format&fit=crop&w=1200&q=80" 
+                alt="Sunlit morning scene showcasing hands softly applying a gentle skincare ritual with warm natural textures" 
+                class="philosophy-image"
+                width="1200"
+                height="1500"
+                loading="lazy"
+              >
+              <div class="philosophy-caption-card">
+                <span class="caption-edition">OBSERVATION N° 12</span>
+                <p class="caption-quote">&ldquo;True luxury in skincare is not complexity, but the quiet confidence of ingredients that simply belong.&rdquo;</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Ingredients Section -->
+    <section class="ingredients-section" id="ingredients" aria-labelledby="ingredients-heading">
+      <div class="container">
+        
+        <!-- Header -->
+        <div class="section-header-editorial">
+          <div class="section-meta">
+            <span class="editorial-label">BOTANICAL SCIENCE &amp; BIO-ACTIVES</span>
+            <span class="section-counter">CURATED ACTIVES</span>
+          </div>
+          <h2 id="ingredients-heading" class="section-title">Considered at molecular depth.</h2>
+          <p class="section-desc">
+            We formulate using three foundational active pillars chosen for their gentle biocompatibility and proven ability to support skin resilience.
+          </p>
+        </div>
+
+        <!-- Horizontal Editorial Layout (Desktop) / Clean Stack (Mobile) -->
+        <div class="ingredients-triptych" role="region" aria-label="Ingredient profiles">
+          
+          <!-- Ingredient 1: Niacinamide -->
+          <div class="ingredient-card">
+            <div class="ingredient-top">
+              <span class="ingredient-code">ACTIVE 01</span>
+              <span class="ingredient-family">VITAMIN B3</span>
+            </div>
+            
+            <h3 class="ingredient-name">Niacinamide</h3>
+            
+            <div class="ingredient-rule" aria-hidden="true"></div>
+
+            <p class="ingredient-desc">
+              A restorative essential known for fostering calm equilibrium. Niacinamide helps refine the visual appearance of pores, smooth irregular tone, and visibly diminish signs of environmental fatigue.
+            </p>
+
+            <dl class="ingredient-meta-list">
+              <div class="meta-row">
+                <dt>Primary Role</dt>
+                <dd>Tone clarity &amp; surface refinement</dd>
+              </div>
+              <div class="meta-row">
+                <dt>Formulation Affinity</dt>
+                <dd>Gentle daily tolerance for all skin states</dd>
+              </div>
+              <div class="meta-row">
+                <dt>Featured In</dt>
+                <dd>The Daily Serum &bull; The Barrier Cream</dd>
+              </div>
+            </dl>
+
+            <div class="ingredient-footnote">
+              <span>Biocompatible grade &bull; Non-flushing neutral pH</span>
+            </div>
+          </div>
+
+          <!-- Ingredient 2: Hyaluronic Acid -->
+          <div class="ingredient-card highlight-card">
+            <div class="ingredient-top">
+              <span class="ingredient-code">ACTIVE 02</span>
+              <span class="ingredient-family">HUMECTANT MATRIX</span>
+            </div>
+            
+            <h3 class="ingredient-name">Hyaluronic Acid</h3>
+            
+            <div class="ingredient-rule" aria-hidden="true"></div>
+
+            <p class="ingredient-desc">
+              Layered multi-molecular weights engineered to bind moisture across varying depths of the upper epidermal layer, imparting a cushion-soft, dewy plumping sensation without surface stickiness.
+            </p>
+
+            <dl class="ingredient-meta-list">
+              <div class="meta-row">
+                <dt>Primary Role</dt>
+                <dd>Deep cellular hydration &amp; suppleness</dd>
+              </div>
+              <div class="meta-row">
+                <dt>Formulation Affinity</dt>
+                <dd>Multi-fraction fermentation process</dd>
+              </div>
+              <div class="meta-row">
+                <dt>Featured In</dt>
+                <dd>The Gentle Cleanser &bull; The Daily Serum</dd>
+              </div>
+            </dl>
+
+            <div class="ingredient-footnote">
+              <span>Tri-weight botanical fermentation</span>
+            </div>
+          </div>
+
+          <!-- Ingredient 3: Ceramides -->
+          <div class="ingredient-card">
+            <div class="ingredient-top">
+              <span class="ingredient-code">ACTIVE 03</span>
+              <span class="ingredient-family">LIPID COMPLEX</span>
+            </div>
+            
+            <h3 class="ingredient-name">Ceramides</h3>
+            
+            <div class="ingredient-rule" aria-hidden="true"></div>
+
+            <p class="ingredient-desc">
+              Bio-identical lipids that mimic the natural cement holding the stratum corneum together. They help fortify against trans-epidermal moisture loss and comfort sensitive, weather-weary skin.
+            </p>
+
+            <dl class="ingredient-meta-list">
+              <div class="meta-row">
+                <dt>Primary Role</dt>
+                <dd>Moisture retention &amp; shield restoration</dd>
+              </div>
+              <div class="meta-row">
+                <dt>Formulation Affinity</dt>
+                <dd>Plant-derived phytosphingosine base</dd>
+              </div>
+              <div class="meta-row">
+                <dt>Featured In</dt>
+                <dd>The Barrier Cream</dd>
+              </div>
+            </dl>
+
+            <div class="ingredient-footnote">
+              <span>Non-comedogenic &bull; Biomimetic structure</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Ingredient Accordion / Transparency Notice -->
+        <div class="ingredient-transparency-box">
+          <div class="transparency-left">
+            <span class="transparency-label">FULL DISCLOSURE POLICY</span>
+            <h4 class="transparency-title">Every component accounted for.</h4>
+            <p class="transparency-text">We hold ourselves to European Cosmetic Safety directives, disclosing our exact botanical extractions and solvent-free distillation procedures.</p>
+          </div>
+          <div class="transparency-right">
+            <a href="#products" class="btn-subtle">
+              <span>View All Formulations</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta-section" aria-labelledby="cta-heading">
+      <div class="container cta-container">
+        
+        <div class="cta-inner-card">
+          <div class="cta-decorative-mark" aria-hidden="true">N</div>
+          
+          <span class="editorial-label cta-label">BEGIN THE PRACTICE</span>
+          
+          <h2 id="cta-heading" class="cta-headline">
+            Make room for your ritual.
+          </h2>
+          
+          <p class="cta-subtext">
+            Three disciplined formulas designed to quiet the noise, replenish moisture, and awaken healthy, luminous skin day after day.
+          </p>
+
+          <div class="cta-button-wrap">
+            <a href="#products" class="btn-primary cta-btn">
+              <span>Explore the Collection</span>
+              <svg class="btn-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="cta-perks">
+            <span class="perk-item">&bull; Complimentary express shipping over $75</span>
+            <span class="perk-item">&bull; 30-day gentle ritual guarantee</span>
+            <span class="perk-item">&bull; Signature compostable packaging</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-container">
+      
+      <!-- Top Footer Row: Wordmark & Newsletter -->
+      <div class="footer-top-grid">
+        
+        <!-- Brand Summary -->
+        <div class="footer-brand-col">
+          <a href="#" class="footer-logo" aria-label="NOIRÉ Homepage">
+            <span class="footer-logo-text">NOIRÉ</span>
+          </a>
+          <p class="footer-tagline">
+            Thoughtfully formulated skincare for an intentional daily ritual. Crafted with restraint, transparency, and European aesthetic discipline.
+          </p>
+          <div class="footer-location-strip">
+            <span>PARIS</span>
+            <span class="sep">&bull;</span>
+            <span>KYOTO</span>
+            <span class="sep">&bull;</span>
+            <span>NEW YORK</span>
+          </div>
+        </div>
+
+        <!-- Newsletter Subscription Form -->
+        <div class="footer-newsletter-col">
+          <span class="footer-col-title">THE NOIRÉ GAZETTE</span>
+          <p class="newsletter-sub">
+            Receive seasonal botanical reflections, formulation notes, and quiet previews of limited harvest releases.
+          </p>
+          <form class="newsletter-form" id="newsletter-form" novalidate>
+            <div class="newsletter-input-group">
+              <label for="newsletter-email" class="sr-only">Your email address</label>
+              <input 
+                type="email" 
+                id="newsletter-email" 
+                name="email" 
+                class="newsletter-input" 
+                placeholder="Enter your email address" 
+                required 
+                autocomplete="email"
+              >
+              <button type="submit" class="newsletter-submit" aria-label="Subscribe to the newsletter">
+                <span>Subscribe</span>
+              </button>
+            </div>
+            <div class="newsletter-message" id="newsletter-feedback" aria-live="polite"></div>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Footer Divider -->
+      <div class="footer-rule" aria-hidden="true"></div>
+
+      <!-- Navigation Links Row -->
+      <div class="footer-links-grid">
+        
+        <!-- Col 1: Shop -->
+        <div class="footer-nav-col">
+          <h3 class="footer-heading">Shop</h3>
+          <ul class="footer-link-list">
+            <li><a href="#products" class="footer-link" data-discover-trigger="cleanser">The Gentle Cleanser</a></li>
+            <li><a href="#products" class="footer-link" data-discover-trigger="serum">The Daily Serum</a></li>
+            <li><a href="#products" class="footer-link" data-discover-trigger="cream">The Barrier Cream</a></li>
+            <li><a href="#products" class="footer-link" data-add-cart="bundle">The Complete Trio</a></li>
+            <li><a href="#products" class="footer-link">Travel Discovery Set</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 2: Philosophy -->
+        <div class="footer-nav-col">
+          <h3 class="footer-heading">Our Philosophy</h3>
+          <ul class="footer-link-list">
+            <li><a href="#philosophy" class="footer-link">The Manifesto</a></li>
+            <li><a href="#ingredients" class="footer-link">Ingredient Library</a></li>
+            <li><a href="#philosophy" class="footer-link">Sustainable Glass</a></li>
+            <li><a href="#philosophy" class="footer-link">Ethical Sourcing</a></li>
+            <li><a href="#philosophy" class="footer-link">Formulation Standards</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Journal & Support -->
+        <div class="footer-nav-col">
+          <h3 class="footer-heading">Concierge</h3>
+          <ul class="footer-link-list">
+            <li><a href="#contact" class="footer-link" id="contact-trigger">Contact Concierge</a></li>
+            <li><a href="#products" class="footer-link">Ritual Consultation</a></li>
+            <li><a href="#products" class="footer-link">Shipping &amp; Returns</a></li>
+            <li><a href="#products" class="footer-link">Order Status</a></li>
+            <li><a href="#products" class="footer-link">Stockists &amp; Spas</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Social & Follow -->
+        <div class="footer-nav-col">
+          <h3 class="footer-heading">Follow</h3>
+          <ul class="footer-link-list">
+            <li>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-link social-link">
+                <span>Instagram @noireskincare</span>
+                <span class="ext-icon" aria-hidden="true">&nearr;</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="footer-link social-link">
+                <span>Pinterest / NoireStudio</span>
+                <span class="ext-icon" aria-hidden="true">&nearr;</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://threads.net" target="_blank" rel="noopener noreferrer" class="footer-link social-link">
+                <span>Editorial Dispatch</span>
+                <span class="ext-icon" aria-hidden="true">&nearr;</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <p class="copyright-text">&copy; 2026 NOIRÉ Skincare Atelier. All rights reserved.</p>
+        <div class="footer-legal-links">
+          <a href="#" class="legal-link" id="legal-privacy">Privacy Policy</a>
+          <span class="legal-dot">&bull;</span>
+          <a href="#" class="legal-link" id="legal-terms">Terms of Service</a>
+          <span class="legal-dot">&bull;</span>
+          <a href="#" class="legal-link" id="legal-cookies">Cookie Preferences</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ============================================== -->
+  <!-- MODAL: Product Detail Quick-View / Discovery   -->
+  <!-- ============================================== -->
+  <div class="modal-backdrop" id="product-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Close product details">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="modal-grid">
+        <!-- Modal Left: Product Media -->
+        <div class="modal-media-col">
+          <div class="modal-image-wrap">
+            <img src="" alt="" id="modal-image" class="modal-img">
+          </div>
+          <div class="modal-media-caption" id="modal-step-tag">STEP 01 / RITUAL FOUNDATION</div>
+        </div>
+
+        <!-- Modal Right: Formula Profile -->
+        <div class="modal-info-col">
+          <div class="modal-header-meta">
+            <span class="modal-category" id="modal-category">NOIRÉ ESSENTIAL</span>
+            <span class="modal-volume" id="modal-volume">100 ML &bull; 3.4 FL OZ</span>
+          </div>
+
+          <h2 class="modal-title" id="modal-title">The Gentle Cleanser</h2>
+          <div class="modal-price" id="modal-price">$42</div>
+
+          <p class="modal-description" id="modal-description">
+            A comforting, low-foaming gel-to-milk emulsion that removes impurities while honoring your skin's natural moisture barrier.
+          </p>
+
+          <div class="modal-detail-tabs">
+            <div class="detail-block">
+              <h3 class="detail-heading">HOW TO USE</h3>
+              <p class="detail-body" id="modal-usage">
+                Massage 2 pumps onto damp skin morning and night. Rinse with tepid water and press dry with a clean linen cloth.
+              </p>
+            </div>
+
+            <div class="detail-block">
+              <h3 class="detail-heading">KEY BIO-ACTIVES</h3>
+              <ul class="actives-list" id="modal-actives">
+                <li>Oat Kernel Extract &bull; Comforts and soothes</li>
+                <li>Fermented Rice Water &bull; Clarifying nourishment</li>
+                <li>Plant Squalane &bull; Mimics natural sebum balance</li>
+              </ul>
+            </div>
+
+            <div class="detail-block">
+              <h3 class="detail-heading">FORMULA ATTRIBUTES</h3>
+              <div class="attributes-tags" id="modal-tags">
+                <span class="attr-tag">Fragrance-Free</span>
+                <span class="attr-tag">Dermatologically Evaluated</span>
+                <span class="attr-tag">Non-Comedogenic</span>
+                <span class="attr-tag">Vegan</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-actions">
+            <button type="button" class="btn-primary modal-add-btn" id="modal-add-btn">
+              <span>Add to Ritual &bull; <span id="modal-btn-price">$42</span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================== -->
+  <!-- DRAWER: Ritual Bag / Mini-Cart                 -->
+  <!-- ============================================== -->
+  <div class="bag-backdrop" id="bag-drawer" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="bag-drawer-title">
+    <div class="bag-panel">
+      <div class="bag-panel-header">
+        <div class="bag-title-wrap">
+          <h2 id="bag-drawer-title" class="bag-drawer-title">Your Ritual Selection</h2>
+          <span class="bag-drawer-subtitle" id="bag-item-count">0 items selected</span>
+        </div>
+        <button type="button" class="bag-close-btn" id="bag-close-btn" aria-label="Close ritual bag">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Shipping Progress Indicator -->
+      <div class="shipping-tracker">
+        <div class="tracker-text" id="shipping-tracker-text">
+          Add $33 more for complimentary express delivery
+        </div>
+        <div class="tracker-bar">
+          <div class="tracker-fill" id="shipping-tracker-fill" style="width: 0%;"></div>
+        </div>
+      </div>
+
+      <!-- Bag Items List -->
+      <div class="bag-items-container" id="bag-items-list">
+        <!-- Dynamically filled by JS or empty state -->
+        <div class="bag-empty-state" id="bag-empty-state">
+          <p class="empty-title">Your ritual bag is quiet.</p>
+          <p class="empty-sub">Explore our three considered essentials to curate your daily skincare practice.</p>
+          <a href="#products" class="btn-subtle empty-explore-btn" id="empty-explore-btn">
+            <span>Explore Essentials</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Bag Summary Footer -->
+      <div class="bag-panel-footer" id="bag-panel-footer">
+        <div class="bag-summary-row">
+          <span class="summary-label">Estimated Subtotal</span>
+          <span class="summary-amount" id="bag-subtotal">$0.00</span>
+        </div>
+        <p class="bag-tax-note">Taxes and carbon-neutral shipping calculated at final step.</p>
+        <button type="button" class="btn-primary bag-checkout-btn" id="bag-checkout-btn">
+          <span>Proceed to Ritual Checkout</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================== -->
+  <!-- MODAL: Concierge / Contact Message Dialog      -->
+  <!-- ============================================== -->
+  <div class="modal-backdrop" id="contact-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title">
+    <div class="modal-card contact-modal-card">
+      <button type="button" class="modal-close-btn" id="contact-close-btn" aria-label="Close concierge dialog">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="contact-modal-body">
+        <span class="editorial-label">PERSONAL CONCIERGE</span>
+        <h2 id="contact-modal-title" class="contact-modal-title">Speak with our skincare atelier.</h2>
+        <p class="contact-modal-desc">
+          Whether you need personalized guidance on layering formulations or wish to inquire about seasonal harvest availability, our team is at your disposal.
+        </p>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-field">
+            <label for="contact-name">Your Full Name</label>
+            <input type="text" id="contact-name" name="name" required placeholder="Elena Rostova">
+          </div>
+          <div class="form-field">
+            <label for="contact-email">Email Address</label>
+            <input type="email" id="contact-email" name="email" required placeholder="elena@atelier.com">
+          </div>
+          <div class="form-field">
+            <label for="contact-inquiry">Inquiry Type</label>
+            <select id="contact-inquiry" name="inquiry">
+              <option value="routine">Routine Formulation Advice</option>
+              <option value="ingredients">Ingredient Tolerability</option>
+              <option value="order">Order &amp; Atelier Inquiries</option>
+              <option value="press">Press &amp; Stockist Partnerships</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="contact-message">Your Message</label>
+            <textarea id="contact-message" name="message" rows="4" required placeholder="How may we assist your ritual?"></textarea>
+          </div>
+          <button type="submit" class="btn-primary contact-submit-btn">
+            <span>Send Dispatch</span>
+          </button>
+          <div class="form-feedback" id="contact-feedback" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-hub" id="toast-hub" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
